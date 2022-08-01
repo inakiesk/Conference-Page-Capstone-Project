@@ -1,3 +1,28 @@
-/* ------------ */
-/* ------font-family: 'COCOGOOSE', 'Lato', sans-serif;------*/
+/*----------------------------GENERAL SETTINGS-----------------------*/
+*{
+  font-family: 'COCOGOOSE', 'Lato', sans-serif;
+}
 
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .desktop{
+    display: block;
+  }
+
+  .mobile{
+    display: none;
+  }
+}
+
+/*---------------------------------------------------------------------*/
+
+/*-------------------------TOOLBAR------------------------------------*/
+
+/*-------------------------------------------------------------------*/
