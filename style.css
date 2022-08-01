@@ -7,7 +7,6 @@
 
 body{
   max-width: 100vw;
-  background-color: aquamarine;
 }
 
 .desktop {
@@ -125,3 +124,52 @@ li {
   align-items: center;
 }
 /*---------------------------------END----------------------------------*/
+
+/*-----------------------Main Home---------------------------------*/
+.home-wrapper {
+  padding: 12px;
+  display: flex;
+  max-width: 100vw;
+  height: fit-content;
+  flex-direction: column;
+}
+
+.hamburguer {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  gap: 7px;
+}
+
+.bar {
+  height: 8px;
+  width: 100%;
+  background-color: #272a31;
+  margin: 6px 0;
+}
+
+.main-greeting {
+  margin-top: 10vh;
+  font-size: 12px;
+}
+
+.main-title {
+  margin-top: 3px;
+  font-size: 16px;
+}
+
+.main-description {
+  margin-top: 5vh;
+  font-size: 14px;
+}
+
+.main-info {
+  margin-top: 5vh;
+  font-size: 18px;
+}
+
+.second-info {
+  margin-top: 3px;
+  font-size: 14px;
+}
+/*----------------------------END----------------------------------*/
