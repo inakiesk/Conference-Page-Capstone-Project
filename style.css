@@ -126,12 +126,31 @@ li {
 /*---------------------------------END----------------------------------*/
 
 /*-----------------------Main Home---------------------------------*/
+#home {
+  background: url(images/mobile-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  #home {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .home-wrapper {
   padding: 12px;
   display: flex;
   max-width: 100vw;
   height: fit-content;
   flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .home-wrapper {
+    width: 50vw;
+  }
 }
 
 .hamburguer {
@@ -151,16 +170,27 @@ li {
 .main-greeting {
   margin-top: 10vh;
   font-size: 12px;
+  color: #ec5242;
 }
 
 .main-title {
   margin-top: 3px;
   font-size: 16px;
+  background: url(images/text-bg.jpg);
+  color: transparent;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .main-description {
   margin-top: 5vh;
   font-size: 14px;
+  border-color: #fff;
+  border-width: 4px;
+  border-style: solid;
+  padding: 6px;
 }
 
 .main-info {
@@ -172,4 +202,23 @@ li {
   margin-top: 3px;
   font-size: 14px;
 }
+
+@media (min-width: 768px) {
+  .main-greeting {
+    font-size: 16px;
+  }
+  .main-title {
+    font-size: 20px;
+  }
+  .main-description {
+    font-size: 18px;
+  }
+  .main-info {
+    font-size: 20px;
+  }
+  .second-info {
+    font-size: 16px;
+  }
+}
+
 /*----------------------------END----------------------------------*/
