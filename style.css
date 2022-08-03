@@ -332,3 +332,40 @@ li {
   align-items: center;
 }
 /*------------------------------END--------------------------------*/
+
+/*-----------------------------------FOOTER----------------------------*/
+
+#footer {
+  width: 100vw;
+}
+
+.top-footer {
+  background-color: #272a31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  filter: grayscale(0.85);
+  opacity: 0.85;
+}
+
+.top-footer h2 {
+  color: #fff;
+}
+
+.footer-partners {
+  display: flex;
+  align-items: center;
+}
+
+.footer-partners img {
+  margin-right: 3vw;
+}
+
+.bot-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*------------------------------------END---------------------------------*/
