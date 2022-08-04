@@ -462,6 +462,13 @@ li {
   background-color: #fff;
   display: flex;
   justify-content: center;
+  border-top: #272a31;
+  border-bottom: #272a31;
+  border-style: solid;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-right-style: none;
+  border-left-style: none;
 }
 
 .stage-wrapper {
@@ -480,6 +487,148 @@ li {
 .stage-description {
   text-align: center;
   margin-bottom: 20px;
+  color: #272a31;
 }
 
 /*----------------------------------------END------------------------------------*/
+
+/*------------------------------------ABOUT--PAST-EVENTS-------------------------*/
+
+#past {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.past-wrapper {
+  width: 90vw;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.past-wrapper h2 {
+  text-align: center;
+}
+
+.past-wrapper p {
+  text-align: center;
+  color: #272a31;
+}
+
+.past-events {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .past-events {
+    flex-direction: row;
+  }
+}
+
+.NYO-2021 {
+  height: 35vw;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/past_event1.jpg);
+  background-size: cover;
+  filter: grayscale(0.85);
+  opacity: 0.85;
+}
+
+.NYO-2020 {
+  height: 35vw;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/past_event2.jpeg);
+  background-size: cover;
+  filter: grayscale(0.85);
+  opacity: 0.85;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .NYO-2021,
+  .NYO-2020 {
+    width: 30vw;
+    height: 30vh;
+  }
+  .NYO-2021 {
+    margin-right: 10px;
+  }
+  .NYO-2020 {
+    margin-top: 0;
+  }
+}
+
+.NYO-2021 p,
+.NYO-2020 p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .NYO-2021 p,
+  .NYO-2020 p {
+    font-size: 40px;
+  }
+}
+/*-----------------------------------END-----------------------------------------*/
+
+/*----------------------------------ABOUT-FOOTER----------------------------*/
+
+#about-footer {
+  width: 100vw;
+}
+
+.about-top-footer {
+  background-color: #272a31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  filter: grayscale(0.85);
+  opacity: 0.85;
+  width: 100vw;
+}
+
+@media (min-width: 768px) {
+  .about-top-footer {
+    display: none;
+  }
+}
+
+.about-top-footer h2 {
+  color: #fff;
+  width: fit-content;
+}
+
+.about-footer-partners {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.about-footer-partners img {
+  margin-right: 3vw;
+}
+
+.about-bot-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------------------------------END---------------------------------*/
