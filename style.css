@@ -632,3 +632,52 @@ li {
 }
 
 /*------------------------------------END---------------------------------*/
+
+/*-----------------------------MOBILE-ICON-MENU-----------------------------*/
+
+#menuBackground {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: #ec534263;
+  background-size: 100vw 100vh;
+  top: 0%;
+  margin-top: 0;
+  z-index: 50;
+  opacity: 100%;
+  filter: drop-shadow(0 4px 4px #000025);
+  backdrop-filter: blur(6px);
+}
+
+.hidden {
+  display: none !important;
+}
+
+#menu {
+  z-index: 100;
+  width: fit-content;
+  height: fit-content;
+}
+
+#closeX {
+  z-index: 100;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#link1,
+#link2,
+#link3 {
+  z-index: 100;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+#link1 a,
+#link2 a,
+#link3 a {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 700;
+}
+/*--------------------------------------END---------------------------------*/
