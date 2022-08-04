@@ -379,6 +379,8 @@ li {
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
+  background-color: #f3f3f3;
+  height: fit-content;
 }
 
 .about-wrapper {
@@ -386,6 +388,8 @@ li {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
+  height: fit-content;
 }
 
 .about-hamburguer {
@@ -413,6 +417,12 @@ li {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .about-title {
+    font-size: 40px;
+  }
+}
+
 .about-description {
   background-color: #fff;
   padding: 10px;
@@ -422,6 +432,13 @@ li {
   color: #272a31;
   text-align: center;
   margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .about-description {
+    width: 60vw;
+    font-size: 20px;
+  }
 }
 
 .about-info {
