@@ -369,3 +369,72 @@ li {
   align-items: center;
 }
 /*------------------------------------END---------------------------------*/
+
+
+/*------------------------------ABOUT PAGE----------------------------------------------------*/
+/*-----------------------------ABOUT MAIN----------------------------------------*/
+#about {
+  width: 100vw;
+  background: url(images/about_bg_01.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.about-wrapper {
+  width: 90vw;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-hamburguer {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  gap: 7px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.about-greeting {
+  color: #ec5242;
+}
+
+.about-title {
+  color: #ec5242;
+  font-size: 28px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about-description {
+  background-color: #fff;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #272a31;
+  color: #272a31;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-info {
+  color: #272a31;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-email {
+  color: black;
+  text-decoration: underline;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+/*--------------------------------END-------------------------------------------*/
