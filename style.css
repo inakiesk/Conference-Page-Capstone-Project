@@ -217,7 +217,6 @@ li {
   color: transparent;
   background-size: cover;
   -webkit-background-clip: text;
-  background-clip: initial;
   -webkit-text-fill-color: transparent;
 }
 
