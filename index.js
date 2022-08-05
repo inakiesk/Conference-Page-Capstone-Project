@@ -90,7 +90,7 @@ function speakerSection() {
     speakersArr[i].classList.add('speaker-tab');
     speakerBox.appendChild(speakersArr[i]);
     if (i > 1) {
-      speakersArr[i].classList.add('hidden');
+      speakersArr[i].classList.add('desktop');
       speakersArr[i].classList.add('more');
     }
     /*----------------SUBPARENT ELEMENTS---------------*/
@@ -160,7 +160,7 @@ speakerButton2.addEventListener('click', seeLess);
 
 function seeMore() {
   
-  moreSpeakers.forEach(x => x.classList.toggle('hidden'));
+  moreSpeakers.forEach(x => x.classList.toggle('desktop'));
 
   const speakerButton = document.querySelector('.speaker-button');
   speakerButton.classList.toggle('hidden');
@@ -173,7 +173,7 @@ function seeMore() {
 
 function seeLess() {
   const moreSpeakers = document.querySelectorAll('.more');
-  moreSpeakers.forEach(x => x.classList.toggle('hidden'));
+  moreSpeakers.forEach(x => x.classList.toggle('desktop'));
 
   const speakerButton = document.querySelector('.speaker-button');
   speakerButton.classList.toggle('hidden');
