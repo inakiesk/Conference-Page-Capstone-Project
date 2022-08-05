@@ -53,11 +53,10 @@ const speakersData = [
   },
 ];
 
-const speakersSection = document.getElementById('speakers');
 const speakersWrapper = document.getElementById('speakers-wrapper');
 
 function speakerSection() {
-  /*-----------------Parent Elements--------------*/
+  /* -----------------Parent Elements-------------- */
   const speakerHeader = document.createElement('h2');
   const speakerLine = document.createElement('div');
   const speakerBox = document.createElement('div');
@@ -74,18 +73,18 @@ function speakerSection() {
   speakersWrapper.appendChild(speakerBox);
   speakersWrapper.appendChild(speakerButton);
 
-  /*-------------------------speakerBox-----------------------------*/
-  var speakersArr = [];
-  var speakersDisplayArr = [];
-  var speakersInfoArr = [];
-  var speakersImgArr = [];
-  var speakersNameArr = [];
-  var speakersStatusArr = [];
-  var lineArr = [];
-  var speakersTextArr = [];
+  /* -------------------------speakerBox----------------------------- */
+  const speakersArr = [];
+  const speakersDisplayArr = [];
+  const speakersInfoArr = [];
+  const speakersImgArr = [];
+  const speakersNameArr = [];
+  const speakersStatusArr = [];
+  const lineArr = [];
+  const speakersTextArr = [];
 
-  for (let i = 0; i < speakersData.length; i++) {
-    /*-----------------PARENT ELEMENT-----------------*/
+  for (let i = 0; i < speakersData.length; i += 1) {
+    /* -----------------PARENT ELEMENT----------------- */
     speakersArr[i] = document.createElement('div');
     speakersArr[i].classList.add('speaker-tab');
     speakerBox.appendChild(speakersArr[i]);
@@ -93,7 +92,7 @@ function speakerSection() {
       speakersArr[i].classList.add('desktop');
       speakersArr[i].classList.add('more');
     }
-    /*----------------SUBPARENT ELEMENTS---------------*/
+    /* ----------------SUBPARENT ELEMENTS--------------- */
     speakersDisplayArr[i] = document.createElement('div');
     speakersDisplayArr[i].classList.add('speaker-display');
     speakersArr[i].appendChild(speakersDisplayArr[i]);
@@ -102,12 +101,12 @@ function speakerSection() {
     speakersInfoArr[i].classList.add('speaker-info');
     speakersArr[i].appendChild(speakersInfoArr[i]);
 
-    /*-------------------SPEAKER-DISPLAY-------------------*/
+    /* -------------------SPEAKER-DISPLAY------------------- */
     speakersImgArr[i] = document.createElement('img');
     speakersImgArr[i].src = speakersData[i].img;
     speakersDisplayArr[i].appendChild(speakersImgArr[i]);
 
-    /*-------------------SPEAKER-INFO---------------------*/
+    /* -------------------SPEAKER-INFO--------------------- */
     speakersNameArr[i] = document.createElement('h3');
     speakersNameArr[i].classList.add('speaker-name');
     speakersNameArr[i].innerHTML = speakersData[i].name;
@@ -126,21 +125,20 @@ function speakerSection() {
     speakersTextArr[i].classList.add('speaker-text');
     speakersTextArr[i].innerHTML = speakersData[i].text;
     speakersInfoArr[i].appendChild(speakersTextArr[i]);
-  };
-/*-----------------------------BUTTON------------------------------*/
-const buttonText = document.createElement('p');
-buttonText.innerHTML = 'MORE';
-speakerButton.appendChild(buttonText);
+  }
+  /* -----------------------------BUTTON------------------------------ */
+  const buttonText = document.createElement('p');
+  buttonText.innerHTML = 'MORE';
+  speakerButton.appendChild(buttonText);
 
-const buttonChevron = document.createElement('img');
-buttonChevron.src = 'images/chevrondown.png';
-speakerButton.appendChild(buttonChevron);
-
-};
+  const buttonChevron = document.createElement('img');
+  buttonChevron.src = 'images/chevrondown.png';
+  speakerButton.appendChild(buttonChevron);
+}
 
 speakerSection();
 
-/*---------------------------SEE-MORE-EVENT---------------------------*/
+/* ---------------------------SEE-MORE-EVENT--------------------------- */
 
 const moreSpeakers = document.querySelectorAll('.more');
 const speakerButton2 = document.createElement('button');
@@ -155,29 +153,26 @@ buttonChevron2.src = 'images/chevrondown.png';
 speakerButton2.appendChild(buttonChevron2);
 
 const speakerButtonSelector = document.querySelector('.speaker-button');
-speakerButtonSelector.addEventListener('click', seeMore);
-speakerButton2.addEventListener('click', seeLess);
 
 function seeMore() {
-  
-  moreSpeakers.forEach(x => x.classList.toggle('desktop'));
+  moreSpeakers.forEach((x) => x.classList.toggle('desktop'));
 
   const speakerButton = document.querySelector('.speaker-button');
   speakerButton.classList.toggle('hidden');
 
   speakerButton2.classList.toggle('hidden');
-};
+}
 
-
-/*---------------------------SEE-LESS-EVENT------------------------*/
+/* ---------------------------SEE-LESS-EVENT------------------------ */
 
 function seeLess() {
   const moreSpeakers = document.querySelectorAll('.more');
-  moreSpeakers.forEach(x => x.classList.toggle('desktop'));
+  moreSpeakers.forEach((x) => x.classList.toggle('desktop'));
 
   const speakerButton = document.querySelector('.speaker-button');
   speakerButton.classList.toggle('hidden');
 
   speakerButton2.classList.toggle('hidden');
-};
-
+}
+speakerButtonSelector.addEventListener('click', seeMore);
+speakerButton2.addEventListener('click', seeLess);

@@ -1,12 +1,12 @@
-/*----------------------------GENERAL SETTINGS-----------------------*/
-*{
+/* ----------------------------GENERAL SETTINGS----------------------- */
+* {
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   max-width: 100vw;
 }
 
@@ -19,18 +19,17 @@ body{
 }
 
 @media (min-width: 768px) {
-
-  .mobile{
+  .mobile {
     display: none !important;
   }
 }
 
 @media (max-width: 767px) {
-  .desktop{
+  .desktop {
     display: none !important;
   }
 
-  .mobile{
+  .mobile {
     display: block !important;
   }
 }
@@ -43,13 +42,12 @@ li {
   list-style-type: none;
 }
 
-/*---------------------------END----------------------------------*/
+/* ---------------------------END---------------------------------- */
 
-/*-------------------------TOOLBAR------------------------------------*/
+/* -------------------------TOOLBAR------------------------------------ */
 #toolbar {
   width: 100vw;
   max-height: 22vh;
-  min-height: fit-content;
   display: flex;
   flex-direction: column;
 }
@@ -61,26 +59,57 @@ li {
   min-height: 24px;
   display: flex;
   justify-content: flex-end;
-  display: flex;
   align-items: center;
 }
 
 .top-bar {
   display: flex;
-  min-width: fit-content;
   max-width: 30vw;
   margin-right: 10vw;
   align-items: center;
-  height: fit-content;
+  height: 50px;
+}
+
+.program-element p {
+  color: #fff;
+}
+
+.past-wrapper p {
+  text-align: center;
+  color: #272a31;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  font-size: 22px;
+}
+
+.NYO-2021 p,
+.NYO-2020 p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.speaker-button p {
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 2vw;
+  width: fit-content;
+}
+
+.speaker-button2 p {
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 2vw;
+}
+
+.top-bar li p {
+  color: #fff;
+  display: flex;
   align-items: center;
 }
 
-.top-bar a li {
-  color: #fff;
-  margin-right: 2vw;
+.top-bar-option {
   margin-left: 2vw;
-  display: flex;
-  align-items: center;
 }
 
 .bot-bar-wrapper {
@@ -95,7 +124,6 @@ li {
 .bot-bar {
   display: flex;
   margin-right: 15vw;
-  height: fit-content;
 }
 
 .bot-bar-logo {
@@ -105,29 +133,36 @@ li {
 .bot-bar-option {
   margin-right: 2vw;
   margin-left: 2vw;
-  color: #272a31;
-  font-size: 16px;
   display: flex;
   align-items: center;
 }
 
-.bot-bar-option:hover {
+.bot-bar-option a {
+  color: #272a31;
+  font-size: 16px;
+}
+
+.bot-bar-campaign a {
+  color: #ec5242;
+  font-size: 16px;
+}
+
+.bot-bar-option a:hover {
   color: #ec5242;
 }
 
 .bot-bar-campaign {
   margin-left: 3.5vw;
-  color: #ec5242;
-  font-size: 16px;
   border-color: #ec5242;
   border-style: solid;
   padding: 5px;
   display: flex;
   align-items: center;
 }
-/*---------------------------------END----------------------------------*/
 
-/*-----------------------Main Home---------------------------------*/
+/* ---------------------------------END---------------------------------- */
+
+/* -----------------------Main Home--------------------------------- */
 #home {
   background: url(images/mobile-bg.png);
   background-repeat: no-repeat;
@@ -146,7 +181,6 @@ li {
   padding: 12px;
   display: flex;
   max-width: 100vw;
-  height: fit-content;
   flex-direction: column;
 }
 
@@ -183,7 +217,6 @@ li {
   color: transparent;
   background-size: cover;
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -216,42 +249,43 @@ li {
     font-size: 26px;
     letter-spacing: 0.5px;
   }
+
   .main-title {
     font-size: 40px;
     letter-spacing: 0.5px;
     margin-top: 30px;
   }
+
   .main-description {
-    font-size: 18px;
     letter-spacing: 0.5px;
     font-size: 22px;
   }
+
   .main-info {
     font-size: 24px;
     letter-spacing: 0.5px;
   }
+
   .second-info {
     font-size: 20px;
     letter-spacing: 0.5px;
   }
 }
 
-/*----------------------------END----------------------------------*/
+/* ----------------------------END---------------------------------- */
 
-/*---------------------------MAIN PROGRAM--------------------------*/
+/* ---------------------------MAIN PROGRAM-------------------------- */
 #program {
   background: url(images/pattern.png);
   background-color: #272a31;
   background-repeat: repeat;
   width: 100vw;
-  height: fit-content;
   display: flex;
   justify-content: center;
   margin: auto;
 }
 
 .program-wrapper {
-  height: fit-content;
   width: 90vw;
   display: flex;
   flex-direction: column;
@@ -324,10 +358,6 @@ li {
   margin-right: 5vw;
 }
 
-.program-element p {
-  color: #fff;
-}
-
 @media (min-width: 768px) {
   .program-element img,
   .program-element h3,
@@ -341,7 +371,6 @@ li {
   width: fit-content;
   padding: 20px;
   min-height: 50px;
-  max-height: fit-content;
   background-color: #ec5242;
   color: #fff;
   display: flex;
@@ -349,7 +378,7 @@ li {
   align-items: center;
 }
 
-.program-button:hover{
+.program-button:hover {
   background-color: #e4250f;
 }
 
@@ -362,9 +391,10 @@ li {
   justify-content: center;
   align-items: center;
 }
-/*------------------------------END--------------------------------*/
 
-/*-----------------------------------FOOTER----------------------------*/
+/* ------------------------------END-------------------------------- */
+
+/* -----------------------------------FOOTER---------------------------- */
 
 #footer {
   width: 100vw;
@@ -406,11 +436,10 @@ li {
   justify-content: center;
   align-items: center;
 }
-/*------------------------------------END---------------------------------*/
 
+/* ------------------------------------END--------------------------------- */
 
-/*------------------------------ABOUT PAGE----------------------------------------------------*/
-/*-----------------------------ABOUT MAIN----------------------------------------*/
+/* -----------------------------ABOUT MAIN---------------------------------------- */
 #about {
   width: 100vw;
   background: url(images/about_bg_01.png);
@@ -418,7 +447,6 @@ li {
   display: flex;
   justify-content: center;
   background-color: #f3f3f3;
-  height: fit-content;
 }
 
 .about-wrapper {
@@ -427,7 +455,6 @@ li {
   display: flex;
   flex-direction: column;
   margin-bottom: 75px;
-  height: fit-content;
 }
 
 .about-hamburguer {
@@ -504,9 +531,9 @@ li {
   font-weight: 700;
 }
 
-/*--------------------------------END-------------------------------------------*/
+/* --------------------------------END------------------------------------------- */
 
-/*--------------------------------ABOUT-STAGE-----------------------------------*/
+/* --------------------------------ABOUT-STAGE----------------------------------- */
 #stage {
   width: 100vw;
   background-color: #fff;
@@ -546,9 +573,9 @@ li {
   line-height: 28px;
 }
 
-/*----------------------------------------END------------------------------------*/
+/* ----------------------------------------END------------------------------------ */
 
-/*------------------------------------ABOUT--PAST-EVENTS-------------------------*/
+/* ------------------------------------ABOUT--PAST-EVENTS------------------------- */
 
 #past {
   width: 100vw;
@@ -570,14 +597,6 @@ li {
   font-size: 30px;
   letter-spacing: 0.5px;
   line-height: 40px;
-}
-
-.past-wrapper p {
-  text-align: center;
-  color: #272a31;
-  letter-spacing: 0.5px;
-  line-height: 30px;
-  font-size: 22px;
 }
 
 .past-events {
@@ -604,12 +623,6 @@ li {
   filter: grayscale(0.85);
 }
 
-.NYO-2021:hover,
-.NYO-2020:hover {
-  opacity: initial;
-  filter: grayscale(initial);
-}
-
 .NYO-2020 {
   height: 35vw;
   width: 70vw;
@@ -623,25 +636,26 @@ li {
   margin-top: 10px;
 }
 
+.NYO-2021:hover,
+.NYO-2020:hover {
+  opacity: initial;
+  filter: grayscale(initial);
+}
+
 @media (min-width: 768px) {
   .NYO-2021,
   .NYO-2020 {
     width: 30vw;
     height: 30vh;
   }
+
   .NYO-2021 {
     margin-right: 10px;
   }
+
   .NYO-2020 {
     margin-top: 0;
   }
-}
-
-.NYO-2021 p,
-.NYO-2020 p {
-  color: #fff;
-  font-weight: 700;
-  font-size: 20px;
 }
 
 @media (min-width: 768px) {
@@ -650,9 +664,10 @@ li {
     font-size: 40px;
   }
 }
-/*-----------------------------------END-----------------------------------------*/
 
-/*----------------------------------ABOUT-FOOTER----------------------------*/
+/* -----------------------------------END----------------------------------------- */
+
+/* ----------------------------------ABOUT-FOOTER---------------------------- */
 
 #about-footer {
   width: 100vw;
@@ -684,7 +699,6 @@ li {
 .about-footer-partners {
   display: flex;
   align-items: center;
-  height: fit-content;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -699,9 +713,9 @@ li {
   align-items: center;
 }
 
-/*------------------------------------END---------------------------------*/
+/* ------------------------------------END--------------------------------- */
 
-/*-----------------------------MOBILE-ICON-MENU-----------------------------*/
+/* -----------------------------MOBILE-ICON-MENU----------------------------- */
 
 #menuBackground {
   height: 100%;
@@ -724,7 +738,6 @@ li {
 #menu {
   z-index: 100;
   width: fit-content;
-  height: fit-content;
 }
 
 #closeX {
@@ -748,13 +761,13 @@ li {
   font-size: 34px;
   font-weight: 700;
 }
-/*--------------------------------------END---------------------------------*/
 
-/*-----------------------------SPEAKERS-SECTION--------------------------------*/
+/* --------------------------------------END--------------------------------- */
+
+/* -----------------------------SPEAKERS-SECTION-------------------------------- */
 
 #speakers {
   width: 100vw;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -762,7 +775,6 @@ li {
 
 #speakers-wrapper {
   width: 90vw;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -794,7 +806,6 @@ li {
   border-width: 1px;
   border-color: #272a31;
   width: 90vw;
-  height: fit-content;
   padding: 18px;
   display: flex;
   align-items: center;
@@ -815,20 +826,6 @@ li {
   }
 }
 
-.speaker-button p {
-  font-weight: 500;
-  font-size: 14px;
-  margin-right: 2vw;
-  width: fit-content;
-  margin: 0;
-}
-
-.speaker-button2 p {
-  font-weight: 500;
-  font-size: 14px;
-  margin-right: 2vw;
-}
-
 .speaker-button2 img {
   transform: scaleY(-1);
 }
@@ -837,7 +834,6 @@ li {
   display: flex;
   align-items: center;
   width: 90vw;
-  height: fit-content;
   margin-bottom: 40px;
 }
 
@@ -896,4 +892,4 @@ li {
   color: #ec5242;
 }
 
-/*---------------------------------------END------------------------------------*/
+/* ---------------------------------------END------------------------------------ */
