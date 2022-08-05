@@ -132,6 +132,7 @@ li {
   background: url(images/mobile-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 @media (min-width: 768px) {
@@ -171,13 +172,13 @@ li {
 
 .main-greeting {
   margin-top: 10vh;
-  font-size: 12px;
+  font-size: 20px;
   color: #ec5242;
 }
 
 .main-title {
-  margin-top: 3px;
-  font-size: 16px;
+  margin-top: 20px;
+  font-size: 26px;
   background: url(images/text-bg.jpg);
   color: transparent;
   background-size: cover;
@@ -188,38 +189,50 @@ li {
 
 .main-description {
   margin-top: 5vh;
-  font-size: 14px;
+  font-size: 18px;
   border-color: #fff;
   border-width: 4px;
   border-style: solid;
   padding: 6px;
+  background-color: #f4f5f7;
+  letter-spacing: 0.5px;
 }
 
 .main-info {
   margin-top: 5vh;
   font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
 .second-info {
   margin-top: 3px;
   font-size: 14px;
+  margin-bottom: 100px;
+  letter-spacing: 0.5px;
 }
 
 @media (min-width: 768px) {
   .main-greeting {
-    font-size: 16px;
+    font-size: 26px;
+    letter-spacing: 0.5px;
   }
   .main-title {
-    font-size: 20px;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
   }
   .main-description {
     font-size: 18px;
+    letter-spacing: 0.5px;
+    font-size: 22px;
   }
   .main-info {
-    font-size: 20px;
+    font-size: 24px;
+    letter-spacing: 0.5px;
   }
   .second-info {
-    font-size: 16px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -244,12 +257,19 @@ li {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 
 .program-title {
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .program-title {
+    letter-spacing: 0.5px;
+    font-size: 32px;
+  }
 }
 
 .program-line {
@@ -290,7 +310,7 @@ li {
     flex-direction: column;
     gap: 20px;
     margin-right: 5px;
-    width: 10vw;
+    width: 15vw;
   }
 }
 
@@ -403,10 +423,10 @@ li {
 
 .about-wrapper {
   width: 90vw;
-  margin-top: 20px;
+  margin-top: 75px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin-bottom: 75px;
   height: fit-content;
 }
 
@@ -426,18 +446,25 @@ li {
 
 .about-greeting {
   color: #ec5242;
+  font-size: 28px;
 }
 
 .about-title {
   color: #ec5242;
-  font-size: 28px;
+  font-size: 30px;
   margin-top: 20px;
   text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+  background-color: #f3f3f3;
+  border-radius: 100%;
+  width: fit-content;
 }
 
 @media (min-width: 768px) {
   .about-title {
-    font-size: 40px;
+    font-size: 48px;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -449,8 +476,11 @@ li {
   border-color: #272a31;
   color: #272a31;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
   display: none;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 28px;
 }
 
 @media (min-width: 768px) {
@@ -464,13 +494,13 @@ li {
 .about-info {
   color: #272a31;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .about-email {
   color: black;
   text-decoration: underline;
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: 700;
 }
 
@@ -502,12 +532,18 @@ li {
 
 .stage-title {
   text-align: center;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+  line-height: 40px;
 }
 
 .stage-description {
   text-align: center;
   margin-bottom: 20px;
   color: #272a31;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  line-height: 28px;
 }
 
 /*----------------------------------------END------------------------------------*/
@@ -531,11 +567,17 @@ li {
 
 .past-wrapper h2 {
   text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  line-height: 40px;
 }
 
 .past-wrapper p {
   text-align: center;
   color: #272a31;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  font-size: 22px;
 }
 
 .past-events {
@@ -558,8 +600,14 @@ li {
   align-items: center;
   background-image: url(images/past_event1.jpg);
   background-size: cover;
-  filter: grayscale(0.85);
   opacity: 0.85;
+  filter: grayscale(0.85);
+}
+
+.NYO-2021:hover,
+.NYO-2020:hover {
+  opacity: initial;
+  filter: grayscale(initial);
 }
 
 .NYO-2020 {
@@ -801,6 +849,7 @@ li {
 
 .speaker-display {
   width: 25vw;
+  min-width: 130px;
   height: 150px;
   display: flex;
   justify-content: flex-end;
