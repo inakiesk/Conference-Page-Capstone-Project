@@ -142,28 +142,42 @@ speakerSection();
 
 /*---------------------------SEE-MORE-EVENT---------------------------*/
 
+const moreSpeakers = document.querySelectorAll('.more');
+const speakerButton2 = document.createElement('button');
+speakerButton2.classList.add('speaker-button2');
+speakerButton2.classList.add('hidden');
+speakersWrapper.appendChild(speakerButton2);
+const buttonText2 = document.createElement('p');
+buttonText2.innerHTML = 'SEE LESS';
+speakerButton2.appendChild(buttonText2);
+const buttonChevron2 = document.createElement('img');
+buttonChevron2.src = 'images/chevrondown.png';
+speakerButton2.appendChild(buttonChevron2);
+
+const speakerButtonSelector = document.querySelector('.speaker-button');
+speakerButtonSelector.addEventListener('click', seeMore);
+speakerButton2.addEventListener('click', seeLess);
+
 function seeMore() {
   
+  moreSpeakers.forEach(x => x.classList.toggle('hidden'));
+
+  const speakerButton = document.querySelector('.speaker-button');
+  speakerButton.classList.toggle('hidden');
+
+  speakerButton2.classList.toggle('hidden');
+};
+
+
+/*---------------------------SEE-LESS-EVENT------------------------*/
+
+function seeLess() {
   const moreSpeakers = document.querySelectorAll('.more');
   moreSpeakers.forEach(x => x.classList.toggle('hidden'));
 
   const speakerButton = document.querySelector('.speaker-button');
   speakerButton.classList.toggle('hidden');
 
-  const speakerButton2 = document.createElement('button');
-  speakerButton2.classList.add('speaker-button2');
-  speakersWrapper.appendChild(speakerButton2);
-
-  const buttonText2 = document.createElement('p');
-  buttonText2.innerHTML = 'SEE LESS';
-  speakerButton2.appendChild(buttonText2);
-
-  const buttonChevron2 = document.createElement('img');
-  buttonChevron2.src = 'images/chevrondown.png';
-  speakerButton2.appendChild(buttonChevron2);
+  speakerButton2.classList.toggle('hidden');
 };
 
-const speakerButtonSelector = document.querySelector('.speaker-button');
-speakerButtonSelector.addEventListener('click', seeMore);
-
-/*---------------------------SEE-LESS-EVENT------------------------*/
