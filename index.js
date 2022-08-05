@@ -121,9 +121,16 @@ function speakerSection() {
     speakersTextArr[i] = document.createElement('p');
     speakersTextArr[i].classList.add('speaker-text');
     speakersTextArr[i].innerHTML = speakersData[i].text;
-    speakersInfoArr[i].appendChild(speakersTextArr[i]);    
+    speakersInfoArr[i].appendChild(speakersTextArr[i]);
   };
+/*-----------------------------BUTTON------------------------------*/
+const buttonText = document.createElement('p');
+buttonText.innerHTML = 'MORE';
+speakerButton.appendChild(buttonText);
 
+const buttonChevron = document.createElement('img');
+buttonChevron.src = 'images/chevrondown.png';
+speakerButton.appendChild(buttonChevron);
 
 };
 
