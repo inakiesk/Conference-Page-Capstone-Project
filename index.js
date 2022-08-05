@@ -18,38 +18,113 @@ const speakersData = [
   {
     img: 'images/speaker01.jpeg',
     name: 'Lindsie Kallirhoe',
-    degree: 'Winner of NYO 2021',
+    status: 'Winner of NYO 2021',
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo ad voluptas',
   },
   {
     img: 'images/speaker02.jpg',
     name: 'Amin Piotr',
-    degree: 'Winner of NYO 2020',
+    status: 'Winner of NYO 2020',
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo ad voluptas',
   },
   {
     img: 'images/speaker03.png',
     name: 'Tami Charisse',
-    degree: 'Upcoming talent of 2022',
+    status: 'Upcoming talent of 2022',
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo ad voluptas',
   },
   {
     img: 'images/speaker04.jpg',
     name: 'Jake Whitaker',
-    degree: 'Finalist of NYO 2020',
+    status: 'Finalist of NYO 2020',
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo ad voluptas',
   },
   {
     img: 'images/speaker05.jpg',
     name: 'Nataly Smith',
-    degree: 'Finalist of NYO 2021',
+    status: 'Finalist of NYO 2021',
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo ad voluptas',
   },
   {
     img: 'images/speaker06.jpeg',
     name: 'Jake Turner',
-    degree: 'Upcoming talent of 2022',
+    status: 'Upcoming talent of 2022',
     text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quo ad voluptas',
   },
 ];
 
+const speakersSection = document.getElementById('speakers');
+const speakersWrapper = document.getElementById('speakers-wrapper');
+
+function speakerSection() {
+  /*-----------------Parent Elements--------------*/
+  const speakerHeader = document.createElement('h2');
+  const speakerLine = document.createElement('div');
+  const speakerBox = document.createElement('div');
+  const speakerButton = document.createElement('button');
+
+  speakerHeader.classList.add('speaker-header');
+  speakerHeader.innerHTML = 'Featured Artists';
+  speakerLine.classList.add('program-line');
+  speakerBox.classList.add('speaker-box');
+  speakerButton.classList.add('speaker-button');
+
+  speakersWrapper.appendChild(speakerHeader);
+  speakersWrapper.appendChild(speakerLine);
+  speakersWrapper.appendChild(speakerBox);
+  speakersWrapper.appendChild(speakerButton);
+
+  /*-------------------------speakerBox-----------------------------*/
+  var speakersArr = [];
+  var speakersDisplayArr = [];
+  var speakersInfoArr = [];
+  var speakersImgArr = [];
+  var speakersNameArr = [];
+  var speakersStatusArr = [];
+  var lineArr = [];
+  var speakersTextArr = [];
+
+  for (let i = 0; i < speakersData.length; i++) {
+    /*-----------------PARENT ELEMENT-----------------*/
+    speakersArr[i] = document.createElement('div');
+    speakersArr[i].classList.add('speaker-tab');
+    speakerBox.appendChild(speakersArr[i]);
+    /*----------------SUBPARENT ELEMENTS---------------*/
+    speakersDisplayArr[i] = document.createElement('div');
+    speakersDisplayArr[i].classList.add('speaker-display');
+    speakersArr[i].appendChild(speakersDisplayArr[i]);
+
+    speakersInfoArr[i] = document.createElement('div');
+    speakersInfoArr[i].classList.add('speaker-info');
+    speakersArr[i].appendChild(speakersInfoArr[i]);
+
+    /*-------------------SPEAKER-DISPLAY-------------------*/
+    speakersImgArr[i] = document.createElement('img');
+    speakersImgArr[i].src = speakersData[i].img;
+    speakersDisplayArr[i].appendChild(speakersImgArr[i]);
+
+    /*-------------------SPEAKER-INFO---------------------*/
+    speakersNameArr[i] = document.createElement('h3');
+    speakersNameArr[i].classList.add('speaker-name');
+    speakersNameArr[i].innerHTML = speakersData[i].name;
+    speakersInfoArr[i].appendChild(speakersNameArr[i]);
+
+    speakersStatusArr[i] = document.createElement('p');
+    speakersStatusArr[i].classList.add('speaker-status');
+    speakersStatusArr[i].innerHTML = speakersData[i].status;
+    speakersInfoArr[i].appendChild(speakersStatusArr[i]);
+
+    lineArr[i] = document.createElement('div');
+    lineArr[i].classList.add('speaker-line');
+    speakersInfoArr[i].appendChild(lineArr[i]);
+
+    speakersTextArr[i] = document.createElement('p');
+    speakersTextArr[i].classList.add('speaker-text');
+    speakersTextArr[i].innerHTML = speakersData[i].text;
+    speakersInfoArr[i].appendChild(speakersTextArr[i]);    
+  };
+
+
+};
+
+speakerSection();
