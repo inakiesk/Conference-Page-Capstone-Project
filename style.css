@@ -711,7 +711,8 @@ li {
   flex-direction: column;
 }
 
-.speaker-button {
+.speaker-button,
+.speaker-button2 {
   background-color: #fff;
   border-style: solid;
   border-width: 1px;
@@ -723,10 +724,16 @@ li {
   align-items: center;
   justify-content: center;
   border-radius: 3px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .speaker-button p {
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 1vw;
+}
+
+.speaker-button2 p {
   font-weight: 500;
   font-size: 14px;
   margin-right: 1vw;

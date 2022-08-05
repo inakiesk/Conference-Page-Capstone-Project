@@ -89,6 +89,10 @@ function speakerSection() {
     speakersArr[i] = document.createElement('div');
     speakersArr[i].classList.add('speaker-tab');
     speakerBox.appendChild(speakersArr[i]);
+    if (i > 1) {
+      speakersArr[i].classList.add('hidden');
+      speakersArr[i].classList.add('more');
+    }
     /*----------------SUBPARENT ELEMENTS---------------*/
     speakersDisplayArr[i] = document.createElement('div');
     speakersDisplayArr[i].classList.add('speaker-display');
@@ -135,3 +139,31 @@ speakerButton.appendChild(buttonChevron);
 };
 
 speakerSection();
+
+/*---------------------------SEE-MORE-EVENT---------------------------*/
+
+function seeMore() {
+  
+  const moreSpeakers = document.querySelectorAll('.more');
+  moreSpeakers.forEach(x => x.classList.toggle('hidden'));
+
+  const speakerButton = document.querySelector('.speaker-button');
+  speakerButton.classList.toggle('hidden');
+
+  const speakerButton2 = document.createElement('button');
+  speakerButton2.classList.add('speaker-button2');
+  speakersWrapper.appendChild(speakerButton2);
+
+  const buttonText2 = document.createElement('p');
+  buttonText2.innerHTML = 'SEE LESS';
+  speakerButton2.appendChild(buttonText2);
+
+  const buttonChevron2 = document.createElement('img');
+  buttonChevron2.src = 'images/chevrondown.png';
+  speakerButton2.appendChild(buttonChevron2);
+};
+
+const speakerButtonSelector = document.querySelector('.speaker-button');
+speakerButtonSelector.addEventListener('click', seeMore);
+
+/*---------------------------SEE-LESS-EVENT------------------------*/
