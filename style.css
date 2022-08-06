@@ -195,6 +195,7 @@ li {
   height: 36px;
   display: flex;
   gap: 7px;
+  margin-bottom: 25px;
 }
 
 .bar {
@@ -451,7 +452,7 @@ li {
 
 .about-wrapper {
   width: 90vw;
-  margin-top: 75px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   margin-bottom: 75px;
