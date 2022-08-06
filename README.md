@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# First Capstone Microverse Project
+# First Microverse Capstone Project
 
 This is my first Microverse capstone project!
 
