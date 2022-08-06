@@ -2,9 +2,11 @@
 
 # First Capstone Microverse Project
 
-> This is my first Microverse capstone project!
->To see the live website click [here](https://inakiesk.github.io/Conference-Page-Capstone-Project/).
->To see an introductory video of the website click [here](https://www.loom.com/share/1f9760057b01477c89cc9323f8530d75).
+This is my first Microverse capstone project!
+
+To see the live website click [here](https://inakiesk.github.io/Conference-Page-Capstone-Project/).
+
+To see a 5 minute introductory video of the website click [here](https://www.loom.com/share/1f9760057b01477c89cc9323f8530d75).
 
 
 ## Built With
@@ -54,7 +56,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
--Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+
 -Thank you Microverse, Youtube, Wikipedia, W3Schools, Codegrepper and my Microverse friends that gave me advice.
 
 ## 📝 License
