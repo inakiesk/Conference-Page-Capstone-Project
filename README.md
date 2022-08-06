@@ -4,7 +4,7 @@
 
 > This is my first Microverse capstone project!
 >To see the live website click [here](https://inakiesk.github.io/Conference-Page-Capstone-Project/).
->To see an introductory video of the website click [here]()
+>To see an introductory video of the website click [here](https://www.loom.com/share/1f9760057b01477c89cc9323f8530d75).
 
 
 ## Built With
