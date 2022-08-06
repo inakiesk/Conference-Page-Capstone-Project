@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css" />
+    <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+    <title>National Youth Orchestra</title>
+  </head>
+
+  <body>
+    <header id="toolbar" class="desktop">
+      <div class="top-bar-wrapper">
+        <ul class="top-bar">
+          <li class="top-bar-option">
+            <img src="images/facebook.png" alt="facebook-icon">
+          </li>
+          <li class="top-bar-option">
+            <img src="images/twitter.png" alt="twitter-icon">
+          </li>
+          <li class="top-bar-option">
+            <p>English</p>
+          </li>
+          <li class="top-bar-option">
+            <p>My Page</p>
+          </li>
+          <li class="top-bar-option">
+            <p>Logout</p>
+          </li>
+        </ul>
+      </div>
+      <div class="bot-bar-wrapper">
+        <a href="index.html" class="bot-bar-logo">
+          <img src="images/Carnegie-logo.jpg" alt="Carnegie-Logo" width="130">
+        </a>
+        <ul class="bot-bar">
+          <li class="bot-bar-option">
+            <a href="about.html">About</a>
+          </li>
+          <li class="bot-bar-option">
+            <a href="#">Program</a>
+          </li>
+          <li class="bot-bar-option">
+            <a href="#">Join</a>
+          </li>
+          <li class="bot-bar-option">
+            <a href="#">Sponsor</a>
+          </li>
+          <li class="bot-bar-option">
+            <a href="#">News</a>
+          </li>
+          <li class="bot-bar-campaign">
+            <a href="#">NYO Campaign</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div id="menuBackground" class="hidden">
+      <img src="images/bclose.png" alt="close icon" id="closeX" class="hidden">
+      <ul class="hidden" id="menu">
+        <li id="link1"><a href="#home">Home</a></li>
+        <li id="link2"><a href="about.html">About</a></li>
+        <li id="link3"><a href="#program">Program</a></li>
+      </ul>
+    </div>
+    <section id="home">
+      <div class="home-wrapper">
+        <div class="hamburguer mobile" id="ham">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="main-greeting">
+          <h1>Hello world!</h1>
+        </div>
+        <div class="main-title">
+          <h2>Welcome to the National Youth Orchestra 2022</h2>
+        </div>
+        <div class="main-description">
+          <p>Join our music festival dedicated to finding the most promising talents of the new generation!</p>
+        </div>
+        <div class="main-info">
+          <p>2022.12.09(FRI) - 2022.12.10(SAT) </p>
+        </div>
+        <div class="second-info">
+          <p>Carnegie Hall, Manhattan, NY</p>
+        </div>
+      </div>
+    </section>
+    <section id="program">
+      <div class="program-wrapper">
+        <h2 class="program-title">Main Program</h2>
+        <div class="program-line"></div>
+        <ul class="program-list">
+          <li class="program-element">
+            <img src="images/program_icon_01.png" alt="Program icon">
+            <h3>Lecture</h3>
+            <p>Learn from the very best teachers and musicians of their field.</p>
+          </li>
+          <li class="program-element">
+            <img src="images/program_icon_02.png" alt="Program icon">
+            <h3>Exhibition</h3>
+            <p>Appreciate various interpretations of classical pieces performed by the most talented artists.</p>
+          </li>
+          <li class="program-element">
+            <img src="images/program_icon_03.png" alt="Program icon">
+            <h3>Forum</h3>
+            <p>Have time to share your thoughts and opinions with experts.</p>
+          </li>
+          <li class="program-element">
+            <img src="images/program_icon_04.png" alt="Program icon">
+            <h3>Workshop</h3>
+            <p>Try doing the interpretation of your favorite piece and share it with others.</p>
+          </li>
+          <li class="program-element">
+            <img src="images/program_icon_05.png" alt="Program icon">
+            <h3>Connections</h3>
+            <p>Get opportunities to network with other artists around the world.</p>
+          </li>
+        </ul>
+        <a class="program-button mobile" href="#">Join the National Youth Orchestra event</a>
+        <a class="see-program desktop" href="#">See the whole program</a>
+      </div>
+    </section>
+    <section id="speakers">
+      <div id="speakers-wrapper">
+
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="top-footer">
+        <h2>Partners</h2>
+        <div class="program-line"></div>
+        <div class="footer-partners">
+          <img src="images/partner01.png" alt="airbnb-icon" width="150">
+          <img src="images/partner02.png" alt="google-icon" width="150">
+          <img src="images/partner03.png" alt="kakao-icon" width="150">
+          <img src="images/partner04.png" alt="naver-icon" width="150">
+          <img src="images/partner05.png" alt="microverse-icon" width="150">
+        </div>
+      </div>
+      <div class="bot-footer">
+        <img src="images/Carnegie-logo.jpg" alt="Carnegie-Logo" width="200">
+        <p class="footer-description">2022 Carnegie Hall USA. Some rights reserved.</p>
+      </div>
+
+    </footer>
+
+
+    <script src="./index.js"></script>
+  </body>
+</html>
